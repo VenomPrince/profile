@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhongli - Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Black Hole Effect -->
+    <div class="black-hole" id="blackHole"></div>
+    <div class="oops-message" id="oopsMessage">Oops...</div>
+    
+    <div class="bg-animation" id="bgAnimation"></div>
+    
+    <div class="container" id="mainContainer">
+        <!-- Main Profile Card -->
+        <div class="main-card">
+            <div class="view-count" id="viewCount">
+                👁 <span id="realViewCount">0</span>
+            </div>
+            <div class="secret-button" id="secretButton"></div>
+            
+            <div class="profile-pic"></div>
+            
+            <h1 class="name">Zhongli</h1>
+            <p class="bio">I'm just a guy who's a hero for fun.</p>
+            
+            <div class="social-icons">
+                <div class="social-icon" data-name="Instagram">📷</div>
+                <div class="social-icon" data-name="Discord">💬</div>
+                <div class="social-icon" data-name="Email">📧</div>
+                <div class="social-icon" data-name="Website">🌐</div>
+                <div class="social-icon" data-name="Projects">💼</div>
+                <div class="social-icon" data-name="GitHub">⚡</div>
+                <div class="social-icon" data-name="Crypto">💰</div>
+            </div>
+            
+            <!-- Tooltip for social icons -->
+            <div class="tooltip" id="tooltip"></div>
+        </div>
+        
+        <!-- Discord Card -->
+        <div class="discord-card">
+            <div class="discord-info">
+                <div class="discord-avatar">
+                    <div class="status-dot"></div>
+                </div>
+                <div class="discord-username">Zhongli</div>
+            </div>
+            <div class="add-discord-btn">
+                Add on Discord
+            </div>
+        </div>
+        
+        <!-- GitHub Card -->
+        <div class="github-card">
+            <div class="github-icon">⚡</div>
+            <div class="info-text">GitHub</div>
+            <div style="margin-left: auto;">→</div>
+        </div>
+        
+        <!-- Info Cards Grid -->
+        <div class="info-cards">
+            <div class="info-card">
+                <div class="info-icon">👤</div>
+                <div class="info-text">Contact Info</div>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">🔐</div>
+                <div class="info-text">Security</div>
+            </div>
+        </div>
+        
+        <!-- Music Player (Last) -->
+        <div class="music-player">
+            <div class="volume-icon" style="margin-bottom: 15px;">🔊</div>
+            <div class="music-title" id="musicTitle">Select a song</div>
+            
+            <div class="music-controls">
+                <div class="time-display" id="currentTime">0:00</div>
+                
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill">
+                        <div class="progress-handle"></div>
+                    </div>
+                </div>
+                
+                <div class="time-display" id="totalTime">0:00</div>
+                
+                <div class="playback-controls">
+                    <button class="control-btn" id="prevBtn">⏮</button>
+                    <button class="control-btn play-btn" id="playBtn">⚡</button>
+                    <button class="control-btn" id="nextBtn">⏭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
