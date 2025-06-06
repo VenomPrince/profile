@@ -184,7 +184,7 @@ function initMusicPlayer() {
         isPlaying = !isPlaying;
         
         if (isPlaying) {
-            this.innerHTML = '⏸️';
+            this.innerHTML = '⏸';
             // Start simulated playback
             audioInterval = setInterval(() => {
                 const song = musicPlaylist[currentSongIndex];
@@ -199,7 +199,7 @@ function initMusicPlayer() {
                 }
             }, 1000);
         } else {
-            this.innerHTML = '⚡';
+            this.innerHTML = '▶';
             clearInterval(audioInterval);
         }
     });
